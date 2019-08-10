@@ -1,0 +1,23 @@
+.postsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+.post {
+  width: 250px;
+  height: 300px;
+  padding: 15px 25px;
+  box-shadow: 2px 2px 5px #c0c0c0;
+  margin: 20px;
+}
+
+.postTitle {
+  height: 100px;
+  text-align: center;
+}
+
+.post p {
+  text-align: justify;
+}
