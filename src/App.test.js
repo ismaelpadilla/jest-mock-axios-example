@@ -19,7 +19,7 @@ describe("<App/> tests", () => {
     const wrapper = shallow(<App />);
   });
 
-  it("renders posts correctly", async () => {
+  it("fetches and renders posts correctly", async () => {
     //// arrange
     // mock response from axios
     const mockedPosts = [
@@ -32,7 +32,6 @@ describe("<App/> tests", () => {
     const mockedResponse = { data: mockedPosts };
     axios.get.mockResolvedValue(mockedResponse);
 
-    //// act
     // mount app
     const wrapper = mount(<App />);
 
