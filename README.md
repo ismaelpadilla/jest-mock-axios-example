@@ -1,4 +1,4 @@
-# react-mock-axios-example
+# jest-mock-axios-example
 
 A simple example illustrating how to use [jest](https://jestjs.io/en/) to mock [axios](https://github.com/axios/axios). Also using [Enzyme](https://airbnb.io/enzyme/) to make it easier to traverse our components. The test that mocks axios can be found in `App.test.js`.
 
