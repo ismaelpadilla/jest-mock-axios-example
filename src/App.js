@@ -12,7 +12,7 @@ class App extends Component {
   componentDidMount = () => {
     // Get a lists of posts
     axios
-      .get("https://jsonplaceholder.typicode.com/posts")
+      .get(process.env.REACT_APP_API_URL)
       .then(r => {
         // Only save first 5 for simplicity
         const posts = r.data.slice(0, 5);
